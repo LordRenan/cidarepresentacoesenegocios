@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cida Pires Representações & Negócios</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+        <script>
+
+            function underlineHome(){
+                document.getElementById('underline-pre-purchase').style.borderImage = "none";
+                document.getElementById('underline-about-me').style.borderImage = "none";
+                document.getElementById('underline-home').style.borderImage = "linear-gradient(to right, var(--primary-color), var(--secondary-color), transparent)";
+            }
+
+            function changeUnderline(number) {
+
+                if (number == 1){
+                    document.getElementById('underline-pre-purchase').style.borderImage = "none";
+                    document.getElementById('underline-about-me').style.borderImage = "none";
+                    document.getElementById('underline-home').style.borderImage = "linear-gradient(to right, var(--primary-color), var(--secondary-color), transparent)";
+
+                }
+
+                if (number == 2){
+                    document.getElementById('underline-home').style.borderImage = "none";
+                    document.getElementById('underline-pre-purchase').style.borderImage = "linear-gradient(to right, var(--primary-color), var(--secondary-color), transparent)";
+                    document.getElementById('underline-about-me').style.borderImage = "none";
+                }
+
+                if (number == 3){
+                    document.getElementById('underline-pre-purchase').style.borderImage = "none";
+                    document.getElementById('underline-about-me').style.borderImage = "linear-gradient(to right, var(--primary-color), var(--secondary-color), transparent)";
+                    document.getElementById('underline-home').style.borderImage = "none";
+                }
+            }
+
+        </script>
+    </head>
+
+    <body onload="underlineHome()">
+
+        <nav class="nav">
+            <div class="logo">
+                <span>Cida Pires</span>
+                <span>Representações & Negócios</span>
+                <!-- <img src="./img/LogoCida.png" width="100px" height="100px"/> -->
+            </div>
+
+            <div class="options">
+                <button class="nav-option">
+                    <span class="sublinhado" id="underline-home"><a id="nav-option-home" class="nav-text" href="#home" onclick="changeUnderline(1)">Principal</a></span>
+                </button>
+    
+                <button class="nav-option">
+                    <span class="sublinhado" id="underline-pre-purchase"><a id="nav-option-pre-purchase" class="nav-text" href="#pre-purchase" onclick="changeUnderline(2)">Sobre o Consórcio</a></span>
+                </button>
+    
+                <button class="nav-option">
+                    <span class="sublinhado" id="underline-about-me"><a id="nav-option-about-me" class="nav-text" href="#about-me" onclick="changeUnderline(3)">Sobre mim</a></span>
+                </button>
+    
+                <button class="nav-option nav-option-contact-me">
+                    <a id="nav-option-contact-me" class="nav-text" href="#contact-me" onclick="changeColor('nav-option-contact-me')">Contato</a>
+                </button>
+            </div>
+        </nav>
+
+        <div id="home" name="home" class="div-home">
+            <div class="div-home-left">
+                <div class="title-home">
+                    <span>Cida Pires</span><br>
+                    <span>Representações & Negócios</span>
+                </div>
+                
+                <p class="p-home">
+                    Porquê fazer <b>consórcio</b> é a <b>chave</b> para aumentar seu patrimônio?
+                    <b>Sou Especialista em realizar sonhos</b> há mais de 20 anos. Já vi muitos olhos de quem acreditou no meu trabalho brilhando de felicidade, me agradecendo.
+                    Você não pode ficar sem saber disso! Estou a disposição para te ajudar a <b>tirar o seu projeto do papel</b>. 
+                </p>
+
+                <div class="buttons">
+                    <button class="btn btn-1"><a href="#">Quero saber mais</a></button>
+                    <button class="btn btn-2"><a href="#">Entrar em contato</a></button>
+                </div>
+            </div>
+
+            <div class="div-home-right">
+                <img class="cida" src="./img/foto_cida_plus.png"/>  <!-- width="450px" height="800px" -->
+            </div>
+        </div>
+
+        <div id="about-me" name="about-me" class="div-about-me">
+            <div class="div-about-me-left">
+
+            </div>
+
+            <div id="about-me" name="about-me" class="div-about-me-right">
+                <span class="title">Sobre mim</span>
+    
+                <p class="paragraph">
+                    Bem vindos a Cida Pires Represencões e Negócios.
+                    Me chamo Maria Aparecida Pires da Silva, tenho 46 anos, sou Administradora de Empresas de formação pela Universidade Paulista - UNIP-SP. 
+                    Iniciei minha trajetória em Consórcio na Honda M&Motos -BA,  Honda Japauto, Volkswagen, Porto Seguro, Embracon, Honda Hville Alphaville, Toyota T-Drive Alphaville e atualmente sou responsável pela Gestão da Carteira de clientes da Honda Sampa Motors. 
+                </p>
+
+                <p class="paragraph">
+                    São mais de 20 anos de experiência em grandes administradoras com forte atuação na cidade de São Paulo. Tenho curso de Vendedora Especialista em Consórcio de Automóveis e Imóveis pela Embracon, cursos de capacitação pela ABAC - Associação Brasileira de Administradoras de consórcios. Formação de Gestão da Carteira de clientes pela Honda. Fui diversas vezes premiada pela colocação em primeiro lugar do Brasil, ranking de vendas da  Honda . Fui premiada como Vendedora de Alta Performance pela Honda.
+
+                </p>
+            </div>
+        </div>
+        
+        <div id="pre-purchase" name="pre-purchase"class="div-pre-purchase">
+            <div class="div-pre-purchase-left">
+                <span class="title title-pre-purchase">Sobre o Consórcio</span>
+                
+                <p class="paragraph">
+                    Consorcio é uma modalidade de crédito na qual pessoas se juntam para cada uma pagar uma parte do bem. 
+                    Ele funciona ao contrário do financiamento normal em que você pega o dinheiro emprestado e, depois, paga com juros. No consórcio, basicamente, você paga o banco <b>antes</b> de comprar o bem e tem o dinheiro para comprar à vista.
+                </p>
+
+                <p class="paragraph">
+                    Comprar bens por meio de um consórcio ajuda diretamente na formação de um patrimônio familiar ou pessoal. Essa tarefa se torna bem mais simples por meio da organização das prestações, que facilitam o investimento recorrente em um bem ou serviço durável, que pode fazer total diferença no futuro de seus familiares.
+                </p>
+
+                <p class="paragraph">
+                    Se você mora em qualquer lugar do Brasil, vai gostar de comprar Consórcio através de nossa Consultoria. Temos estratégias de compra em que você economiza muito, fazendo seu patrimônio crescer de forma inteligente.
+                </p>
+
+            </div>
+
+            <div class="div-pre-purchase-right">
+                <img src="./img/consorcio.png" width="90%" height="100%"/>
+            </div>
+        </div>
+
+        <div id="contact-me" name="contact-me" class="div-contact">
+            <div class="div-contact-me-left">
+                <span class="title title-contact-me">Entre em contato</span><br>
+                <span class="title-2">Me encontre presencialmente ou me mande uma mensagem.</span><br>
+                <div class="infos">
+                    <div>
+                        <img src="./img/place.png" width="40px" height="40px"/>
+                        <span class="address-text">Rua das Laranjeiras, 358 - Barueri - SP, Brasil</span><br>
+                    </div>
+
+                    <div>
+                        <img/>
+                        <span></span>
+                    </div>
+
+                    <div class="div-phone">
+                        <img src="./img/call.png" width="40px" height="40px"/>
+                        <a href="https://api.whatsapp.com/send?phone=5511982478379" class="phone" target="_blank">(11)98247-8379</a>
+                    </div>
+    
+                </div>
+            </div>
+                
+            <div class="div-contact-me-right">
+
+            </div>
+        
+        </div>
+
+        <footer class="footer">
+            <span>Cida Pires Representações & Negócios - 2022</span>
+        </footer>
+
+    </body>
+</html>
