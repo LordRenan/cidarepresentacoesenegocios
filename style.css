@@ -404,7 +404,7 @@ body{
 
 /* A51 - 2400 x 1080 pixels */
 
-@media screen  and (min-device-width: 412px) and (min-device-height: 915px){
+@media screen  and (max-device-width: 412px) and (max-device-height: 915px){
     .logo{
         font-size: 1.25rem !important;
     }
