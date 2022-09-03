@@ -34,6 +34,12 @@
                     document.getElementById('underline-about-me').style.borderImage = "linear-gradient(to right, var(--primary-color), var(--secondary-color), transparent)";
                     document.getElementById('underline-home').style.borderImage = "none";
                 }
+
+                if (number == 4){
+                    document.getElementById('underline-pre-purchase').style.borderImage = "none";
+                    document.getElementById('underline-about-me').style.borderImage = "none";
+                    document.getElementById('underline-home').style.borderImage = "none";
+                }
             }
 
         </script>
@@ -62,7 +68,7 @@
                 </button>
     
                 <button class="nav-option nav-option-contact-me">
-                    <a id="nav-option-contact-me" class="nav-text" href="#contact-me" onclick="changeColor('nav-option-contact-me')">Contato</a>
+                    <a id="nav-option-contact-me" class="nav-text" href="#contact-me" onclick="changeUnderline(4)">Contato</a>
                 </button>
             </div>
         </nav>
@@ -81,36 +87,17 @@
                 </p>
 
                 <div class="buttons">
-                    <button class="btn btn-1"><a href="#pre-purchase">Quero saber mais</a></button>
-                    <button class="btn btn-2"><a href="https://api.whatsapp.com/send?phone=5511982478379">Entrar em contato</a></button>
+                    <button class="btn btn-1"><a class="btn-a" href="#pre-purchase">Quero saber mais</a></button>
+                    <button class="btn btn-2"><a class="btn-a" href="https://api.whatsapp.com/send?phone=5511982478379" target="_blank">Entrar em contato</a></button>
                 </div>
             </div>
 
             <div class="div-home-right">
-                <img class="cida" src="./img/foto_cida_plus.png"/>  <!-- width="450px" height="800px" -->
+                <img class="cida" src="./img/cida2.png"/>  <!-- width="450px" height="800px" -->
             </div>
         </div>
 
-        <div id="about-me" name="about-me" class="div-about-me">
-            <div class="div-about-me-left">
-
-            </div>
-
-            <div id="about-me" name="about-me" class="div-about-me-right">
-                <span class="title">Sobre mim</span>
-    
-                <p class="paragraph">
-                    Bem vindos a Cida Pires Represencões e Negócios.
-                    Me chamo Maria Aparecida Pires da Silva, tenho 46 anos, sou Administradora de Empresas de formação pela Universidade Paulista - UNIP-SP. 
-                    Iniciei minha trajetória em Consórcio na Honda M&Motos -BA,  Honda Japauto, Volkswagen, Porto Seguro, Embracon, Honda Hville Alphaville, Toyota T-Drive Alphaville e atualmente sou responsável pela Gestão da Carteira de clientes da Honda Sampa Motors. 
-                </p>
-
-                <p class="paragraph">
-                    São mais de 20 anos de experiência em grandes administradoras com forte atuação na cidade de São Paulo. Tenho curso de Vendedora Especialista em Consórcio de Automóveis e Imóveis pela Embracon, cursos de capacitação pela ABAC - Associação Brasileira de Administradoras de consórcios. Formação de Gestão da Carteira de clientes pela Honda. Fui diversas vezes premiada pela colocação em primeiro lugar do Brasil, ranking de vendas da  Honda . Fui premiada como Vendedora de Alta Performance pela Honda.
-
-                </p>
-            </div>
-        </div>
+        
         
         <div id="pre-purchase" name="pre-purchase"class="div-pre-purchase">
             <div class="div-pre-purchase-left">
@@ -133,6 +120,27 @@
 
             <div class="div-pre-purchase-right">
                 <img src="./img/consorcio.png" width="90%" height="100%"/>
+            </div>
+        </div>
+
+        <div id="about-me" name="about-me" class="div-about-me">
+            <div class="div-about-me-left">
+                <img class="cida-2" src="./img/cida3.png"/> 
+            </div>
+
+            <div id="about-me" name="about-me" class="div-about-me-right">
+                <span class="title">Sobre mim</span>
+    
+                <p class="paragraph">
+                    Bem-vindos a Cida Pires Represencões e Negócios.
+                    Me chamo Maria Aparecida Pires da Silva, tenho 46 anos, sou Administradora de Empresas de formação pela Universidade Paulista - UNIP-SP. 
+                    Iniciei minha trajetória em Consórcio na Honda M&Motos - BA,  Honda Japauto, Volkswagen, Porto Seguro, Embracon, Honda Hville Alphaville, Toyota T-Drive Alphaville e atualmente sou responsável pela Gestão da Carteira de clientes da Honda Sampa Motors. 
+                </p>
+
+                <p class="paragraph">
+                    São mais de 20 anos de experiência em grandes administradoras com forte atuação na cidade de São Paulo. Tenho curso de Vendedora Especialista em Consórcio de Automóveis e Imóveis pela Embracon, cursos de capacitação pela ABAC - Associação Brasileira de Administradoras de consórcios. Formação de Gestão da Carteira de clientes pela Honda. Fui diversas vezes premiada pela colocação em primeiro lugar do Brasil, ranking de vendas da  Honda . Fui premiada como Vendedora de Alta Performance pela Honda.
+
+                </p>
             </div>
         </div>
 
