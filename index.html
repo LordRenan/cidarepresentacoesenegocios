@@ -5,8 +5,18 @@
         <title>Cida Pires Representações & Negócios</title>
         <link rel="stylesheet" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <meta contentType="text/html; charset=UTF-8"/>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
         <script>
+
+            function sendEmail(){
+                let subject = document.getElementById('subject').value;
+                let body = document.getElementById('body').value;
+                
+                window.location.href="mailto:cn.cida19@yahoo.com.br?Subject=" + subject + "&Body=" + body
+            }
 
             function underlineHome(){
                 document.getElementById('underline-pre-purchase').style.borderImage = "none";
@@ -81,14 +91,14 @@
                 </div>
                 
                 <p class="p-home">
-                    Porquê fazer <b>consórcio</b> é a <b>chave</b> para aumentar seu patrimônio?
+                    Por que fazer <b>consórcio</b> é a <b>chave</b> para aumentar seu patrimônio?
                     <b>Sou Especialista em realizar sonhos</b> há mais de 20 anos. Já vi muitos olhos de quem acreditou no meu trabalho brilhando de felicidade, me agradecendo.
                     Você não pode ficar sem saber disso! Estou a disposição para te ajudar a <b>tirar o seu projeto do papel</b>. 
                 </p>
 
                 <div class="buttons">
                     <button class="btn btn-1"><a class="btn-a" href="#pre-purchase">Quero saber mais</a></button>
-                    <button class="btn btn-2"><a class="btn-a" href="https://api.whatsapp.com/send?phone=5511982478379" target="_blank">Entrar em contato</a></button>
+                    <button class="btn btn-2"><a class="btn-a" href="https://api.whatsapp.com/send?phone=5511982478379" target="_blank">Entrar em contato</a><img src="./img/redirect.png" width="15px" height="15px" style="padding-left: 5%;"/></button>
                 </div>
             </div>
 
@@ -100,7 +110,7 @@
         
         
         <div id="pre-purchase" name="pre-purchase"class="div-pre-purchase">
-            <div class="div-pre-purchase-left">
+            <div class="div-pre-purchase-left" data-aos="fade-right">
                 <span class="title title-pre-purchase">Sobre o Consórcio</span>
                 
                 <p class="paragraph">
@@ -124,7 +134,7 @@
         </div>
 
         <div id="about-me" name="about-me" class="div-about-me">
-            <div class="div-about-me-left">
+            <div class="div-about-me-left" data-aos="fade-right">
                 <img class="cida-2" src="./img/cida3.png"/> 
             </div>
 
@@ -144,31 +154,82 @@
             </div>
         </div>
 
+        
+        <div class="company-values">
+            <div class="card">
+                <span class="title">Missão</span>
+                <p class="paragraph">
+                    A  nossa missão é transformar os sonhos de nossos clientes  em realidade de forma justa e planejada.
+                    Nosso maior objetivo é fazer com que as pessoas invistam com rentabilidade, liquidez e segurança. Podendo contar conosco  dando assessoria e ter as melhores oportunidades em seus negócios.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="title">Visão</span>
+                <p class="paragraph">
+                    Buscar continuamente a realização dos sonhos de nossos clientes e colaboradores, alinhando os valores das pessoas ao da empresa. Super as expectativas  de todos, com comprometimento, honestidade e inovação.
+                    Empenho em encontrar a solução para resolver as questões necessárias alcançarmos nossos objetivos e de nossos clientes, fazendo a diferença na realização de seus projetos.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="title">Valores</span>
+                <p class="paragraph">
+                    Ser  referência na realização dos sonhos das pessoas.
+                </p>
+            </div>
+
+        </div>
+
         <div id="contact-me" name="contact-me" class="div-contact">
             <div class="div-contact-me-left">
-                <span class="title title-contact-me">Entre em contato</span><br>
+                <span class="title title-contact-me">Entre em contato</span>
                 <span class="title-2">Me encontre presencialmente ou me mande uma mensagem.</span><br>
+
                 <div class="infos">
-                    <div>
-                        <img src="./img/place.png" width="40px" height="40px"/>
-                        <span class="address-text">Rua das Laranjeiras, 358 - Barueri - SP, Brasil</span><br>
+                    <div class="div-info">
+                        <img src="./img/location_red.png" width="40px" height="40px"/>
+                        <span class="info-text">Av. Gen. Edgar Facó, 441 - Vila Arcadia, SP</span><br>
                     </div>
 
-                    <div>
-                        <img/>
-                        <span></span>
+                    <div class="div-info">
+                        <img src="./img/gmail.png" width="40px" height="40px"/>
+                        <span class="info-text"><a href="#" target="_blank">cn.cida19@yahoo.com.br</a></span>
                     </div>
 
-                    <div class="div-phone">
-                        <img src="./img/call.png" width="40px" height="40px"/>
-                        <a href="https://api.whatsapp.com/send?phone=5511982478379" class="phone" target="_blank">(11)98247-8379</a>
+                    <div class="div-info">
+                        <img src="./img/whatsapp.png" width="40px" height="40px"/>
+                        <span class="info-text"><a href="https://api.whatsapp.com/send?phone=5511982478379" target="_blank">(11) 98247-8379</a></span>
                     </div>
-    
+
+                    <div class="div-info">
+                        <img src="./img/linkedin_colored.png" width="40px" height="40px"/>
+                        <span class="info-text"><a href="https://www.linkedin.com/in/maria-aparecida-65901924a/" target="_blank">Maria Aparecida</a></span>
+                    </div>
+
+                    <div class="div-info">
+                        <img src="./img/instagram_colored.png" width="40px" height="40px"/>
+                        <span class="info-text"><a href="https://www.instagram.com/cida.pires.representacao/" target="_blank">@cida.pires.representacao</a></span>
+                    </div>
+
+                    <!-- <button class="btn btn-zap"><img src="./img/whatsapp.png" width="50px" height="50px"/><a class="btn-a-zap" href="https://api.whatsapp.com/send?phone=5511982478379" target="_blank">Mandar uma mensagem agora!</a></button> -->
+                    <!-- <button class="btn btn-insta"><img src="./img/Instagram-Icon.png" width="50px" height="50px"/><a class="btn-a-zap" href="https://api.whatsapp.com/send?phone=5511982478379" target="_blank">Mandar uma mensagem agora!</a></button> -->
+                    <!-- <button class="btn btn-linkedin"><img src="./img/whatsapp.png" width="50px" height="50px"/><a class="btn-a-zap" href="https://api.whatsapp.com/send?phone=5511982478379" target="_blank">Mandar uma mensagem agora!</a></button> -->
                 </div>
             </div>
                 
             <div class="div-contact-me-right">
-
+                <!-- <div class="cont-email">
+                    <form class="email-form" enctype="text/plain">
+                        <span>Mande um email</span>
+                        <label class="email-label">Assunto:</label>
+                        <input class="email-input" type="text" id="subject" name="Subject" value="">
+                        <label class="email-label">Mensagem:</label>
+                        <textarea class="email-textarea" name="Body" id="body" value=""></textarea>
+                        <button type="submit" onclick="sendEmail()" class="btn btn-email">Enviar e-mail</button>
+                    </form>
+                </div> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.8365696068868!2d-46.70880668436305!3d-23.502395384712127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef85688fe81e5%3A0x34ea1192c3487a0b!2sAv.%20Gen.%20Edgar%20Fac%C3%B3%2C%20441%20-%20Vila%20Arcadia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2029240-001!5e0!3m2!1spt-BR!2sbr!4v1662305541714!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         
         </div>
@@ -176,6 +237,17 @@
         <footer class="footer">
             <span>Cida Pires Representações & Negócios - 2022</span>
         </footer>
+
+        <script>
+            window.sr = ScrollReveal({reset: true});
+            // sr.reveal('.nav', {duration: 1000});
+            sr.reveal('.div-home-left', {duration: 1000});
+            sr.reveal('.div-home-right', {duration: 1000});
+            sr.reveal('.div-pre-purchase-left', {duration: 2000, enter: 'right', rotate: {x: 0, y:100, z:0}});
+            sr.reveal('.div-pre-purchase-right', {duration:2000, enter: 'right', rotate: {x: 0, y:100, z:0}});
+            sr.reveal('.div-about-me-left', {duration: 2000, enter: 'right', rotate: {x: 0, y:100, z:0}});
+            sr.reveal('.div-about-me-right', {duration:2000, enter: 'right', rotate: {x: 0, y:100, z:0}});
+        </script>
 
     </body>
 </html>
