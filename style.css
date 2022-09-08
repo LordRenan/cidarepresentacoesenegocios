@@ -554,6 +554,7 @@ body{
 
     .title-2{
         font-size: 1.2rem !important;
+        margin-top: 5%;
     }
 
     .paragraph{
@@ -569,11 +570,12 @@ body{
     }
 
     .infos{
-        width: 65%;
+        width: 75%;
+        margin-top: 10%;
     }
 
     .info-text{
-        font-size: 1.1rem;
+        font-size: 2rem;
     }
 }
 
@@ -583,6 +585,11 @@ body{
 @media screen  and (max-device-width: 412px) and (max-device-height: 915px){
     .logo{
         font-size: 1.25rem !important;
+        display: none;
+    }
+
+    .options{
+        width: 100%;
     }
 
     .title{
@@ -598,20 +605,22 @@ body{
     }
 
     .nav-option-contact-me{
-        width: 20%;
+        width: 25%;
         height: 30%;
+        margin-right: 5%;
     }
     
     .div-home{
-        height: 62vh !important;
+        height: 100% !important;
+        flex-direction: column;
     }
 
-    .div-home-left{
-        width: 80% !important;
+    .div-home-left, .div-home-right{
+        width: 100% !important;
     }
 
     .title-home{
-        margin-top: 35%;
+        margin-top: 25%;
         font-size: 4rem !important;
     }
 
@@ -639,7 +648,7 @@ body{
     }
 
     .cida{
-        width: 95% !important;
+        width: 70% !important;
         height: 60% !important;
     }
 
@@ -699,8 +708,10 @@ body{
     }
 
     .btn{
-        font-size: 1.95em !important;
+        font-size: 2.1rem !important;
         width: 90% !important;
+        height: 100%;
+        padding: 4%;
     }
 
     .footer{
