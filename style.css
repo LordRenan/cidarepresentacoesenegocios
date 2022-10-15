@@ -437,7 +437,7 @@ body{
     flex-direction: column;
     align-content: flex-start;
     justify-content: flex-start;
-
+    visibility: hidden;
 }
 
 .div-contact-me-right{
@@ -448,11 +448,17 @@ body{
     align-items: center;
     /* background-color: #dee2ff; */
     background: #fff;
+    visibility: hidden;
 }
 
 .info-text{
     font-size: 1.5rem;
     margin-left: 3%;    
+}
+
+.info-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .title-2{
@@ -531,6 +537,16 @@ body{
     padding-top: 10%;
 }
 
+.card-1, .card-2, .card-3{
+    visibility: hidden;
+}
+
+.redirect{
+    width: 5%;
+    height: 30%;
+    padding-left: 5%;
+}
+
 @media screen and (max-device-width: 1920px) and (max-device-height: 1080px){
     .logo{
         font-size: 1.3rem !important;
@@ -579,10 +595,60 @@ body{
     }
 }
 
+@media screen and (max-device-width: 1280px) and (max-device-height: 720px){
+    .logo{
+        font-size: 1rem !important;
+    }
+    
+    .title-home{
+        font-size: 2rem !important;
+    }
+
+    .p-home{
+        font-size: 1rem !important;
+    }
+
+    .nav-option{
+        font-size: 1rem !important;
+    }
+
+    .title{
+        font-size: 1.5rem !important;
+    }
+
+    .title-2{
+        font-size: 1rem !important;
+        margin-top: 5%;
+    }
+
+    .paragraph{
+        font-size: 1rem !important;
+    }
+
+    .btn{
+        font-size: 1rem !important;
+    }
+
+    .footer{
+        font-size: .8rem !important;
+    }
+
+    .infos{
+        width: 75%;
+        margin-top: 5%;
+    }
+
+    .info-text{
+        font-size: 1.2rem;
+    }
+}
+
 
 /* A51 - 2400 x 1080 pixels */
 
-@media screen  and (max-device-width: 412px) and (max-device-height: 915px){
+/* @media screen  and (max-device-width: 412px) and (max-device-height: 915px){ */
+@media screen  and (max-device-width: 800px) and (max-device-height: 1400px){
+
     .logo{
         font-size: 1.25rem !important;
         display: none;
@@ -703,7 +769,8 @@ body{
     }
 
     .title-2{
-        font-size: 1.9rem !important;
+        font-size: 2.5rem !important;
+        width: 75%;
     }
 
     .paragraph{
@@ -735,6 +802,17 @@ body{
 
     .div-contact-me-left, .div-contact-me-right{
         width: 100%;
+    }
+
+    .info-text{
+        font-size: 2.5rem;
+    }
+
+    .mission, .vision{
+        padding-left: 37%;
+    }
+    .values{
+        padding-left: 36%;
     }
 }
 
