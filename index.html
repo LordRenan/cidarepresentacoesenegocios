@@ -219,6 +219,38 @@
         </footer>
 
         <script>
+
+            let lgpdHtml = `
+            <div class="div-popup-lgpd">
+            <div class="popup-lgpd-text">
+                <div class="cont-text">
+                    <h3 class="h3-lgpd">Política de Privacidade de Dados</h3>
+                    <p class="p-lgpd">Ao navegar em nosso site, você concorda com a nossa política de privacidade. Para ver em detalhes como ela funciona <a class="link-policy" href="./politica_privacidade.html">clique aqui</a>.</p>
+                </div>
+            </div>
+
+            <div class="popup-lgpd-buttons">
+                <button class="btn-popup">Estou ciente e quero continuar</button>
+            </div>
+
+        </div>
+            `
+
+            let lsContent = localStorage.getItem('acceptedLGDP');
+            if(!lsContent){
+                document.body.innerHTML += lgpdHtml;
+
+                let lgpdArea = document.querySelector('.div-popup-lgpd');
+                let lgpdButton = lgpdArea.querySelector('.btn-popup');
+
+                lgpdButton.addEventListener('click', () => {
+                    lgpdArea.remove();
+
+                    localStorage.setItem('acceptedLGDP', true)
+                })
+            }
+
+
             window.sr = ScrollReveal({reset: true});
             sr.reveal('.div-home-left', {duration: 1000});
             sr.reveal('.div-home-right', {duration: 1000});
